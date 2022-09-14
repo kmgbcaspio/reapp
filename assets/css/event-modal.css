@@ -1,0 +1,65 @@
+
+
+.cbFormRequiredMarker {
+    color: #EB2A00 !important;
+}
+
+.event-container table[data-cb-name="cbTable"],
+.event-container table[role="presentation"] {
+    width: 100%;
+    float: left;
+    min-width: auto !important;
+    min-height: auto !important;
+    
+}
+
+.cbFormLabelRequired > label {
+    font-weight: 600;
+}
+
+input[name$="Date_All_Day_Start"],
+input[name$="Date_All_Day_End"] {
+    display: inline-block;
+}
+
+select[name$="User_ID"],
+input[name$="Title"],
+textarea[name$="Notes"] {
+    width: 100% !important;
+}
+
+.event-container input[name$="EditRecord"] {
+    margin-bottom: 10px !important;
+}
+
+.cbFormLabelError {
+    color: #000 !important
+}
+
+.cbFormLabelCell,
+.cbFormLabel {
+    font-weight: 700px !important;
+}
+
+.add-project-container,
+.edit-project-container {
+    float: left;
+    width: 100%;
+}
+
+input[name$="Date_All_Day_Start"],
+input[name$="Date_All_Day_End"],
+select[name="cbParamVirtual1"],
+select[name="cbParamVirtual2"] {
+    width: 50% !important;
+}
+
+table[role="presentation"],
+table[data-cb-name="cbTable"] {
+    width: 100%;
+    float: left;
+}
+
+input[type="submit"] {
+    margin-top: 10px !important;
+}

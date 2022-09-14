@@ -1,0 +1,62 @@
+body {
+    background: #f6f9fc !important;
+}
+
+.public-wrapper {
+    width: 100%;
+    float: left;
+}
+
+.login,
+.forgot-password {
+    margin: 140px 0px 0px 0px;
+    max-width: 410px;
+}
+
+.login-container table[data-cb-name="cbTable"],
+.login-container table[role="presentation"],
+.forgot-password-container table[data-cb-name="cbTable"],
+.forgot-password-container table[role="presentation"] {
+    width: 100%;
+    float: left;
+}
+
+.public-image {
+    background: url('../img/image-3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+p {
+    margin-bottom: 0px;
+}
+
+a {
+    color: #5a6a7e !important;
+    font-size: small;
+}
+
+a:hover {
+    color: #ff7610;
+}
+
+@media (max-width: 991px) {
+    .public-image {
+        display: none;
+    }
+}
+
+.cbLoginButtonContainer input,
+.cbPasswordRecoveryButtonContainer input {
+    margin: 0px !important;
+}
+
+.forgot-password-container section {
+    background: transparent !important;
+}
+
+.forgot-password-container form#caspioform > div {
+    width: 100%;
+}

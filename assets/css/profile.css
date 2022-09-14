@@ -1,0 +1,114 @@
+body {
+    background: #f6f9fc !important;
+}
+
+.profile-container,
+.edit-profile-container,
+.change-password-container {
+    float: left;
+    width: 100%;
+}
+
+.profile-container table[data-cb-name="cbTable"],
+.profile-container table[role="presentation"],
+.edit-profile-container table[data-cb-name="cbTable"],
+.edit-profile-container table[role="presentation"],
+.change-password-container table[data-cb-name="cbTable"],
+.change-password-container table[role="presentation"] {
+    width: 100%;
+    float: left;
+}
+
+.profile-container table[data-cb-name="cbTable"] tr td img,
+.edit-profile-container table[data-cb-name="cbTable"] tr td img,
+.change-password-container table[data-cb-name="cbTable"] tr td img {
+    border-radius: 50%;
+}
+
+.profile-container table[data-cb-name="cbTable"] tr td {
+    text-align: center;
+}
+
+.profile-container table[data-cb-name="cbTable"] tr:nth-child(2) td span {
+    font-size: 1.40625rem;
+}
+
+.profile-container table[data-cb-name="cbTable"] tr:nth-child(3) td {
+    padding-top: 5px;
+}
+
+.profile-container table[data-cb-name="cbTable"] tr:nth-child(3) td span {
+    font-size: 0.82031rem;
+    color: #5a6a7e;
+}
+
+.profile-edit-button {
+    font-size: 18px !important;
+    color: #5a6a7e !important;
+}
+
+.profile-edit-button:hover {
+    font-size: 18px !important;
+    color: #ff7610 !important;
+}
+
+.change-password-wrapper {
+    padding: 0px !important;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.change-password-image {
+    background: url('../img/image-3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+@media (max-width: 960px) {
+    .change-password-image {
+        background-image: none !important;
+    }
+}
+
+.change-password-container {
+    max-width: 100% !important;
+
+}
+
+.cbPasswordStrength {
+    width: 100% !important;
+}
+
+.change-password {
+    margin-top: 72px;
+}
+
+.change-password .header {
+    padding: 1rem 1rem 0rem 1rem;
+}
+
+.change-password .header h2 {
+    margin-bottom: 5px;
+}
+
+.change-password .change-password-container table[data-cb-name="cbTable"] tr td.cbHTMLBlockContainer p {
+    font-size: small;
+}
+
+.change-password-wrapper {
+    max-height: 607px !important;
+}
+
+.change-password-image {
+    max-height: 607px !important;
+}
+
+.change-password-container .cbUpdateButtonContainer input {
+    margin: 0px !important;
+}
+
+.change-password-container .cbUpdateButtonContainer {
+    padding: 15px !important;
+}

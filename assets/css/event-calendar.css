@@ -1,0 +1,41 @@
+body {
+    background: #f6f9fc !important;
+}
+
+.fc-event {
+    color: #fff !important;
+    background-color: #ff7610 !important;
+    border-color: #ff7610 !important;
+}
+
+.loader{
+    position: absolute;
+    height: 100%;
+    background: rgb(255,255,255,.7);
+    z-index: 9999;
+    width: 100%;
+    display: none;
+}
+
+.loader img{
+    top: 40%;
+    left: 45%;
+    position: fixed;
+}
+
+.modal-dialog {
+    min-width: 550px;
+}
+
+
+.modal-dialog iframe {
+    /* max-height: 900px; */
+}
+
+.cbResultSetCalendarCaptionCell {
+    background-color: #fff !important;
+}
+
+.cbResultSetCalendarCaption {
+    color: #000 !important;
+}

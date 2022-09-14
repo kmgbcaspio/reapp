@@ -1,0 +1,237 @@
+navigation {
+    min-height: 3.75rem;
+    border-bottom: 1px solid #eaf2f9;
+    position: fixed;
+    background: #fff;
+    z-index: 2;
+    left: 0;
+}
+
+navigation .caspio-logo-container {
+    border-right: 1px solid #eaf2f9;
+    width: 15rem;
+    margin: 10px 0px 10px 15px;
+}
+
+navigation ul:not(#navigationMenu) {
+    list-style: none;
+    float: left;
+    height: 64px;
+    margin: 0px 15px;
+    padding: 10px 0px;
+}
+
+navigation ul:not(#navigationMenu) li {
+    float: left;
+    margin: 0px 10px;
+}
+
+navigation ul:not(#navigationMenu) li a {
+    color: #1b1e24 !important;
+    padding: 10px 15px;
+    /* transition: all .3s; */
+    float: left;
+}
+
+navigation ul:not(#navigationMenu) li a i {
+    margin-right: 8px;
+    /* transition: all .3s; */
+}
+
+navigation ul:not(#navigationMenu) li a:hover {
+    /* background-color: #ff9750; */
+    background-color: rgba(255, 118, 16, .07);
+    color: #1b1e24 !important;
+    border-radius: 5px;
+}
+
+navigation ul:not(#navigationMenu) li a:hover i {
+    color: #ff7610;
+}
+
+navigation ul:not(#navigationMenu) li a.active {
+    background-color: #ff7610;
+    color: #fff !important;
+    border-radius: 5px;
+}
+
+navigation ul:not(#navigationMenu) li a.active:hover {
+    background-color: #ff7610;
+    color: #fff !important;
+    border-radius: 5px;
+}
+
+navigation ul:not(#navigationMenu) li a.active:hover i {
+    color: #fff !important;
+}
+
+navigation .user-profile {
+    height: 64px;
+    padding: 15px 0px;
+    width: 155px;
+}
+
+navigation .user-profile>a {
+    float: left;
+    width: 100%;
+    color: #1b1e24 !important;
+}
+
+navigation .user-profile>a::after {
+    display: none;
+}
+
+navigation .user-profile>a .user-icon {
+    height: 2rem;
+    width: 2rem;
+    margin: 0px 5px;
+}
+
+.dropdown-menu {
+    font-size: 0.875rem;
+}
+
+.dropdown-menu.show {
+    top: 17px !important;
+}
+
+.dropdown-menu .dropdown-item {
+    color: #5a6a7e !important;
+}
+
+.dropdown-menu .dropdown-item {
+    transition: all .2s ease-in;
+}
+
+.dropdown-menu .dropdown-item:hover, .dropdown-menu .dropdown-item:active {
+    background: none;
+}
+
+.dropdown-menu .dropdown-item:hover span, .dropdown-menu .dropdown-item:active span{
+    color: #ff7610 !important;
+}
+
+.dropdown-menu .dropdown-item:hover i, .dropdown-menu .dropdown-item:active i {
+    color: #5a6a7e !important;
+}
+
+.dropdown-menu .dropdown-item i {
+    margin-right: 10px;
+}
+
+@media (min-width: 1288px) and (max-width: 1632px) {
+    navigation ul:not(#navigationMenu) {
+        padding: 14px 0px;
+    }
+
+    navigation ul:not(#navigationMenu) li a, #nav-user-fullname {
+        font-size: 10px;
+    }
+
+    .caspio-logo-container {
+        width: 11rem !important;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 1287px) {
+    navigation ul:not(#navigationMenu) {
+        padding: 14px 0px;
+    }
+
+    #nav-user-fullname {
+        font-size: 10px;
+    }
+
+    navigation ul:not(#navigationMenu) li a span {
+        display: none;
+    }
+
+    .caspio-logo-container {
+        width: 11rem !important;
+    }
+
+    navigation ul:not(#navigationMenu) li a i { 
+        margin-right: 0px;
+    }
+}
+
+@media (min-width: 763px) {
+    .navigation-toggle {
+        display: none;
+    }
+
+    navigation #navigationMenu {
+        display: none;
+    }
+}
+
+@media (max-width: 762px) {
+    .caspio-logo-container {
+        display: none;
+    }
+
+    navigation ul:not(#navigationMenu) {
+        display: none;
+    }
+
+    #nav-user-fullname {
+        font-size: 10px;
+    }
+
+    .user-details-container {
+        display: none;
+    }
+
+    navigation .user-profile {
+        width: 62px;
+    }
+}
+
+.navigation-toggle {
+    float: left;
+    padding: 10px;
+    font-size: 25px;
+}
+
+.navigation-toggle button {
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+
+.navigation-toggle button:hover {
+    background-color: #ff7610;
+    color: #fff;
+}
+
+navigation #navigationMenu {
+    float: left;
+    width: 100%;
+    list-style: none;
+    padding: 0px;
+    margin-top: 10px;
+}
+
+navigation #navigationMenu li {
+    float: left;
+    width: 100%;
+}
+
+navigation #navigationMenu li a {
+    width: 100%;
+    float: left;
+    padding: 5px 0px 5px 30px;
+    color: #1b1e24 !important;
+}
+
+navigation #navigationMenu li a i {
+    margin-right: 10px;
+    width: 15px;
+}
+
+navigation #navigationMenu li a:hover {
+    background-color: #ff7610;
+    color: #fff !important;
+}
+

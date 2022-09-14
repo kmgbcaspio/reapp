@@ -1,0 +1,316 @@
+body {
+    background: #f6f9fc !important;
+}
+
+.cb-search-container input[type="text"],
+.cb-search-container select {
+    height: 32px !important;
+    min-width: 180px !important;
+}
+
+.cb-search-container button {
+    height: 32px !important;
+    display: inline-block !important;
+
+}
+.cb-search-container .cbHTMLBlockContainer {
+    min-width: 180px;
+    padding-top: 28px !important;
+}
+
+.cb-search-container,
+.cb-result-container {
+    float: left;
+    width: 100%;
+}
+
+.cb-result-container {
+    overflow-x: auto;
+}
+
+/* .cbSubmitButtonContainer  {
+    visibility: hidden;
+} */
+
+.cb-result-container table[data-cb-name="cbTable"] {
+    float: left;
+    width: 100%;
+}
+
+.cb-search-container table[role="presentation"] tbody tr td {
+    float: left;
+}
+
+.cb-search-container .cb-search-button-container {
+    margin-top: 7px;
+}
+
+.cb-result-container table[data-cb-name="cbTable"] tbody tr[data-cb-name="header"] th a {
+    color: #5a6a7e !important;
+    font-weight: 400 !important;
+}
+
+.cb-result-container table[data-cb-name="cbTable"] tbody tr td.cbResultSetData {
+    color: #212529 !important;
+}
+
+.cb-result-container table[data-cb-name="cbTable"]  .cbResultSetGroup1Row td:first-child {
+    cursor: pointer;
+}
+
+.cb-result-container table[data-cb-name="cbTable"] tbody tr.cbResultSetDataRow:hover {
+    background-color: #f6f9fc;
+}
+
+.cb-result-container table[data-cb-name="cbTable"] tbody tr td:last-child input[type="submit"] {
+    width: 45%;
+    margin-right: 5px !important;
+    margin-bottom: 5px !important;
+    margin-top: 5px !important;
+}
+
+.cb-result-container table[data-cb-name="cbTable"] tbody tr td:nth-child(10) {
+    width: 115px;
+    text-align: right;
+}
+S
+.cb-result-container table[data-cb-name="cbTable"] tbody tr td:nth-child(10) a {
+    margin-right: 5px;
+    font-size: 17px;
+}
+
+.cb-result-container table[data-cb-name="cbTable"] tbody tr td:last-child input[value="Update"] {
+    color: #FFFFFF;
+    background-color: #ff9750 !important;
+    border-color: #ff9750 !important;
+}
+
+.cb-result-container table[data-cb-name="cbTable"] tbody tr td:last-child input[value="Update"]:hover {
+    color: #FFFFFF;
+    background-color: #ff7610 !important;
+    border-color: #ff7610 !important;
+}
+
+.cb-result-container table[data-cb-name="cbTable"] tbody tr td:last-child input[value="Cancel"] {
+    color: #fff;
+    background-color: #fb4143 !important;
+    border-color: #fb4143 !important;
+}
+
+.cb-result-container table[data-cb-name="cbTable"] tbody tr td:last-child input[value="Cancel"]:hover {
+    color: #fff;
+    background-color: #fa1c1e !important;
+    border-color: #fa0f12 !important;
+}
+
+.cb-result-container table.Table tr {
+    display: table-row;
+}
+
+.cb-result-container .HeadCtnr table.Table {
+    margin-bottom: 0px !important;
+}
+
+.cb-result-container .HeadCtnr table.Table td {
+    border-top: none !important;
+}
+
+.cb-result-container .HeadCtnr,
+.cb-result-container .BodyCtnr,
+.cb-result-container .HeadCtnr table.Table,
+.cb-result-container .BodyCtnr table.Table {
+    float: left !important;
+    width: 100% !important;
+    display: inline-table;
+    min-width: 1000px;
+}
+
+.ResizeCtnr {
+    display: none !important;
+}
+
+/* .cb-result-container .HeadCtnr table.Table tbody {
+    width: 100% !important;
+    display: inline-table !important;
+} */
+
+.cb-result-container .HeadCtnr table.Table tr th:first-child,
+.cb-result-container .HeadCtnr table.Table tr td:first-child,
+.cb-result-container .BodyCtnr  table.Table tr th:first-child,
+.cb-result-container .BodyCtnr  table.Table tr td:first-child,
+.cb-result-container .HeadCtnr table.Table tr th:last-child,
+.cb-result-container .HeadCtnr table.Table tr td:last-child,
+.cb-result-container .BodyCtnr  table.Table tr th:last-child,
+.cb-result-container .BodyCtnr  table.Table tr td:last-child {
+    width: 6% !important;
+    min-width: 64px;
+
+}
+
+.cb-result-container .HeadCtnr table.Table tr th:not(:first-child):not(:last-child),
+.cb-result-container .HeadCtnr table.Table tr td:not(:first-child):not(:last-child),
+.cb-result-container .BodyCtnr table.Table tr th:not(:first-child):not(:last-child),
+.cb-result-container .BodyCtnr table.Table tr td:not(:first-child):not(:last-child) {
+    width: 10% !important;
+    min-width: 100px;
+}
+
+.cb-result-container .HeadCtnr table.Table tr td,
+.cb-result-container .BodyCtnr  table.Table tr td {
+    position: relative !important;
+}
+
+.cb-result-container .HeadCtnr table.Table tr th,
+.cb-result-container .BodyCtnr  table.Table tr th,
+.cb-result-container .HeadCtnr table.Table tr td,
+.cb-result-container .BodyCtnr  table.Table tr td {
+    font-size: 12px !important;
+}
+
+
+.cb-result-container .HeadCtnr table.Table tr td div.Data {
+    text-transform: capitalize !important;
+    text-align: left !important;
+}
+
+.cb-result-container .HeadCtnr table.Table tr td div.Data label {
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+.cb-result-container .HeadCtnr table.Table tr td div.Data,
+.cb-result-container .BodyCtnr table.Table tr td div,
+.cb-result-container .BodyCtnr table.Table tr td div input:not([type="checkbox"]),
+.cb-result-container .BodyCtnr table.Table tr td div select {
+    float: left !important;
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0px !important;
+}
+
+.cb-result-container .BodyCtnr table.Table tr td div input[type="text"] {
+    padding: 0px 10px !important;
+}
+
+.cb-result-container .BodyCtnr table.Table tr td div select {
+    padding: 0px 5px !important;
+}
+
+.cb-result-container .BodyCtnr table.Table tr td div select {
+    white-space: normal;
+}
+
+.cb-result-container .BodyCtnr  table.Table tr td:not(.Bool):not(.RA) div.Data {
+    text-align: left !important;
+}
+
+.cb-result-container .HeadCtnr table.Table tr,
+.cb-result-container .BodyCtnr  table.Table tr {
+    width: 100% !important;
+}
+
+.cb-result-container table tr.Row {
+    margin: 0px !important;
+}
+
+/* Employee Details */
+
+.employee-details-container,
+.employee-logs-container {
+    float: left;
+    width: 100%;
+    overflow: auto;
+}
+
+.employee-details-container table tr {
+    display: flex !important;
+}
+
+.employee-details-container table tr td {
+    float: left;
+}
+
+.employee-details-container input[name$="Date_of_Birth"] {
+    display: inline-flex;
+}
+
+.employee-details-container .cbBackButtonContainer {
+    padding: 30px 15px 30px 15px !important;
+}
+
+.employee-details-container .cbBackButtonContainer input[type="submit"] {
+    width: 45%;
+    margin-right: 10px !important;
+}
+
+.add-log-button,
+.edit-log-button,
+.list-details-button
+{
+    font-size: 16px !important;
+    color: #6d6d6d !important;
+    float: right;
+}
+
+.employee-logs-container table[role="presentation"],
+.employee-logs-container table[data-cb-name="cbTable"] {
+    float: left;
+    width: 100%;
+}
+
+.employee-logs-container table[data-cb-name="cbTable"] tr[data-cb-name="header"] th a {
+    color: #5a6a7e !important;
+    font-weight: 400 !important;
+}
+
+#cb-modal-body table[role="presentation"],
+#cb-modal-body table[data-cb-name="cbTable"] {
+    width: 100% !important;
+    float: left !important;
+}
+
+#cb-modal-body input[value="Update"] {
+    margin-bottom: 10px !important;
+}
+
+#directoryList table[data-cb-name="cbTable"] .cbResultSetListViewDataLabel::after {
+    content: ': ';
+}
+#directoryList table[data-cb-name="cbTable"] .cbResultSetData::before {
+    content: ' ';
+}
+
+#directoryList a[data-cb-name="BulkEditButton"] {
+    display: inline-block !important;
+}
+
+#directoryList a[data-cb-name="BulkEditButton"] {
+    /*margin-bottom: 14px;*/
+}
+
+#directoryList table[data-cb-name="cbTable"] tr td {
+    float: left !important;
+    display: block !important;
+}
+
+#directoryList table[data-cb-name="cbTable"] tr td div[data-cb-name="DataCtnr"] {
+    padding: 10px 20px;
+}
+
+.list-details-button {
+    font-size: 18px !important;
+}
+
+@media screen and (max-width: 1024px) {
+    #inlineActions.ToolBox .RAItem {
+        padding: 10px 0px;
+    }
+}
+
+.modal {
+    z-index: 3;
+}
+
+.modal-backdrop {
+    z-index: 2;
+}
