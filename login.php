@@ -1,3 +1,4 @@
+<?php include 'config.php'; ?>
 <html lang="en">
 <head>
     <!-- Meta -->
@@ -9,14 +10,14 @@
     <meta name="author" content="htmlstream.com">
 
     <!-- Components Vendor Styles -->
-    <link rel="stylesheet" href="./assets/vendor/font-awesome/css/all.min.css">
-    <link rel="stylesheet" href="./assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="<?php echo $urlConfig; ?>/assets/vendor/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="<?php echo $urlConfig; ?>/assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
 
     <!-- Theme Styles -->
-    <link rel="stylesheet" href="./assets/css/theme.css">
+    <link rel="stylesheet" href="<?php echo $urlConfig; ?>/assets/css/theme.css">
 
-    <link rel="stylesheet" href="./assets/css/common.css">
-    <link rel="stylesheet" href="./assets/css/public.css">
+    <link rel="stylesheet" href="<?php echo $urlConfig; ?>/assets/css/common.css">
+    <link rel="stylesheet" href="<?php echo $urlConfig; ?>/assets/css/public.css">
 
     <title>Caspio Template</title>
 </head>
@@ -26,7 +27,7 @@
         <div class="col-lg-6 float-left">
             <div class="col-md-8 float-left">
                 <div class="float-left w-100 m-3">
-                    <img src="./assets/img/caspio-logo.svg" width="150px"/>
+                    <img src="<?php echo $urlConfig; ?>/assets/img/caspio-logo.svg" width="150px"/>
                 </div>
                 <div class="login float-left w-100">
                     <div class="float-left w-100 p-3">
@@ -34,8 +35,7 @@
                         <p class="small">Login to your dashboard with your registered email address and password</p>
                     </div>
                     <div class="login-container float-left w-100">
-                        <!-- Remove and add your application login Datapage -->
-							<button class="btn btn-primary mb-4" type="button" onclick="location.href='./employee/dashboard.php'">Log-In</button>
+                        <script type="text/javascript" src="https://c3abw763.caspio.com/dp/7ccbb0002abb27d369bb45fd8672/emb"></script>
                     </div>
                     <div class="float-left w-100 ml-3">
                         <a href="./forgot-password.php">Forgot Password?</a>
