@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<div class="container">
     <div class="form-row">
         <div class="col-lg-6 col-xl-6">
             <h3 class="text-center mt-5">Listing Information</h3>

@@ -73,10 +73,11 @@
             <div class="header mb-4">
                 <h2><?php pageTitle(); ?></h2>
             </div>
+            <main>
+                <?php pageContent(); ?>
+            </main>
         </div>
-        <main>
-            <?php pageContent(); ?>
-        </main>
+        
 
 
         <!-- Global Vendor -->
