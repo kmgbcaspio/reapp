@@ -17,7 +17,15 @@
 
     <link rel="stylesheet" href="<?php echo $urlConfig; ?>/assets/css/common.css">
     <link rel="stylesheet" href="<?php echo $urlConfig; ?>/assets/css/navbar.css">
-
+    <!-- Custom styles -->
+    <style>
+        @media (min-width: 768px) {
+            .modal-xl {
+                width: 90%;
+                max-width:1200px;
+            }
+        }
+    </style>
     <title>Real Estate</title></head>
     <body>
         <navigation class="float-left w-100">
@@ -39,6 +47,7 @@
                     <img class="user-icon rounded-circle float-left mr-2" src="<?php echo $urlConfig; ?>/assets/img/default-user.jpg"/>
                     <div class="mt-1 float-left user-details-container">
                         <span id="nav-user-fullname"></span>
+                      
                         <small class="fa fa-angle-down ml-1"></small>
                     </div>
                 </a>
@@ -64,8 +73,10 @@
             <div class="header mb-4">
                 <h2><?php pageTitle(); ?></h2>
             </div>
-            <?php pageContent(); ?>
         </div>
+        <main>
+            <?php pageContent(); ?>
+        </main>
 
 
         <!-- Global Vendor -->
