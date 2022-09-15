@@ -62,8 +62,9 @@
         </div>    
         <div class="wrapper p-4">
             <div class="header mb-4">
-                <h2></h2>
+                <h2><?php pageTitle(); ?></h2>
             </div>
+            <?php pageContent(); ?>
         </div>
 
 

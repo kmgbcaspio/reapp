@@ -1,3 +1,3 @@
 <?php
-    echo "Home Page Broker";
+    include 'listings.php';
     
