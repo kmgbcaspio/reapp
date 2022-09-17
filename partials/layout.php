@@ -17,15 +17,11 @@
 
     <link rel="stylesheet" href="<?php echo $urlConfig; ?>/assets/css/common.css">
     <link rel="stylesheet" href="<?php echo $urlConfig; ?>/assets/css/navbar.css">
-    <!-- Custom styles -->
-    <style>
-        @media (min-width: 768px) {
-            .modal-xl {
-                width: 90%;
-                max-width:1200px;
-            }
+    <!-- <style>
+        #cb-modal {
+            z-index: 999999999;
         }
-    </style>
+    </style> -->
     <title>Real Estate</title></head>
     <body>
         <navigation class="float-left w-100">
@@ -68,17 +64,33 @@
 
         <div class="d-none">
             
-        </div>    
+        </div>
         <div class="wrapper p-4">
             <div class="header mb-4">
-                <h2><?php pageTitle(); ?></h2>
+                <h2></h2>
             </div>
             <main>
                 <?php pageContent(); ?>
             </main>
         </div>
         
-
+        
+        
+        
+        <!-- Modal -->
+        <div id="cb-modal" class="modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cb-modal-title">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="cb-modal-body"></div>
+                </div>
+            </div>
+        </div>
 
         <!-- Global Vendor -->
         <script src="<?php echo $urlConfig; ?>/assets/lib/jquery/dist/jquery.min.js"></script>

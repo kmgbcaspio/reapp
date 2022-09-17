@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container-fluid">
     <ul class="nav nav-tabs" id="myTab" role="tablist">
         <li class="nav-item" role="presentation">
             <button class="nav-link active" id="for-sale-tab" data-toggle="tab" data-target="#for_sale" type="button" role="tab" aria-controls="for_sale" aria-selected="true">For Sale</button>
