@@ -17,11 +17,6 @@
 
     <link rel="stylesheet" href="<?php echo $urlConfig; ?>/assets/css/common.css">
     <link rel="stylesheet" href="<?php echo $urlConfig; ?>/assets/css/navbar.css">
-    <!-- <style>
-        #cb-modal {
-            z-index: 999999999;
-        }
-    </style> -->
     <title>Real Estate</title></head>
     <body>
         <navigation class="float-left w-100">
