@@ -14,3 +14,6 @@ function pageContent(){
 function navLinks(){
     include 'nav_links.php';
 }
+function setActiveLink(){
+    echo "profile";
+}

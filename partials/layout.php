@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="<?php echo $urlConfig; ?>/assets/css/navbar.css">
     <title>Real Estate</title></head>
     <body>
+        <input type="hidden" name="page_reference" id="page_reference" value="<?php if (function_exists('setActiveLink')) { setActiveLink(); } ?>">
         <navigation class="float-left w-100">
             <div class="navigation-toggle">
                 <button type="button" data-toggle="collapse" data-target="#navigationMenu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
@@ -94,5 +95,11 @@
         <script src="<?php echo $urlConfig; ?>/assets/js/common.js"></script>
         <script src="<?php echo $urlConfig; ?>/assets/js/main.js"></script>
         <script src="<?php echo $urlConfig; ?>/assets/lib/Detect-Element-Is-Visible-jQuery-onScreen/jquery.onscreen.js"></script>
+        <script>
+            $(window).on('load',function(){
+                var pr = "." + $("#page_reference").val();
+                $(pr).addClass('active');
+            })
+        </script>
     </body>
 </html>
