@@ -1,3 +1,4 @@
+<?php include 'config.php'; ?>
 <html lang="en">
 <head>
     <!-- Meta -->
@@ -32,15 +33,22 @@
                         <p class="small">If you do not receive an email, please make sure to check your spam folder as well.</p>
                     </div>
                     <div class="forgot-password-container float-left w-100">
-                        <script type="text/javascript" src="https://c2axa202.caspio.com/dp/CAF260005080e8b690984197bd0f/emb"></script>
+                        <script type="text/javascript" src="https://c3abw763.caspio.com/dp/7ccbb0005b88a9ae638649d2a301/emb"></script>
                     </div>
                     <div class="float-left w-100 ml-3">
-                        <a href="./login.php">Back to Login</a>
+                        <a href="login.php">Back to Login</a>
                     </div>
                 </div>
             </div>
         </div>
         <div class="col-lg-6 float-right public-image"></div>
     </div>
+    <script src="<?php echo $urlConfig; ?>/assets/lib/jquery/dist/jquery.min.js"></script>
+    <script>
+        $(window).on('load',function(){
+            alert('loaded!');
+            $(".cbPasswordRecoveryButtonContainer").css("background","#f6f9fc");
+        })
+    </script>
 </body>
 </html>

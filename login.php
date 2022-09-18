@@ -19,7 +19,8 @@
     <link rel="stylesheet" href="<?php echo $urlConfig; ?>/assets/css/common.css">
     <link rel="stylesheet" href="<?php echo $urlConfig; ?>/assets/css/public.css">
 
-    <title>Caspio Template</title>
+    <title>Login Page</title>
+    
 </head>
 
 <body>
@@ -55,4 +56,15 @@
         }
     }
 </style>
+<!-- <style>
+    .cbLoginButtonContainer{
+        background: #f6f9fc;
+    }
+</style> -->
+<script src="<?php echo $urlConfig; ?>/assets/lib/jquery/dist/jquery.min.js"></script>
+<script>
+    $(window).on('load',function(){
+        $(".cbLoginButtonContainer").css("background","#f6f9fc");
+    })
+</script>
 </html>
