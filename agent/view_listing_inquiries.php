@@ -1,19 +1,20 @@
 <?php
 include "../config.php";
 
-include "../partials/layout_broker.php";
+include "../partials/layout_agent.php";
 
 function pageTitle(){
-    return "Add New Agent";
+    return "Inquiries";
 }
 
 function pageContent(){
-    include 'add_new_user_agent_content.php';
+    include 'view_listing_inquiries_content.php';
 }
 
 function navLinks(){
     include 'nav_links.php';
 }
+
 function setActiveLink(){
-    echo "add_new_agent";
+    echo "inquiries";
 }

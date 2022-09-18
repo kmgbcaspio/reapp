@@ -11,12 +11,12 @@
         <div class="tab-pane fade show active" id="for_sale" role="tabpanel" aria-labelledby="for-sale-tab">
             <br>
             <br>
-            <script type="text/javascript" src="https://c3abw763.caspio.com/dp/7ccbb000cae73345b2f346f98130/emb"></script>
+            <script type="text/javascript" src="https://c3abw763.caspio.com/dp/7ccbb00053648b03c4554e7fbcb3/emb"></script>
         </div>
         <div class="tab-pane fade" id="for_rent" role="tabpanel" aria-labelledby="for-rent-tab">
             <br>
             <br>
-            <script type="text/javascript" src="https://c3abw763.caspio.com/dp/7ccbb0001bf94efc494a4235a314/emb"></script>
+            <script type="text/javascript" src="https://c3abw763.caspio.com/dp/7ccbb000fa5040026d45437daf17/emb"></script>
         </div>
         
     </div>

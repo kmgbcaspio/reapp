@@ -14,16 +14,6 @@
     </a>
 </li>
 <li>
-    <a href="add_new_user_agent.php" class="add_new_agent"><i class="fa fa-user-plus"></i>
-        <span>Add New Agent</span>
-    </a>
-</li>
-<li>
-    <a href="agents.php" class="users"><i class="fa fa-users"></i>
-        <span>Agents</span>
-    </a>
-</li>
-<li>
     <a href="profile.php" class="profile"><i class="fa fa-user-cog"></i>
         <span>Profile</span>
     </a>

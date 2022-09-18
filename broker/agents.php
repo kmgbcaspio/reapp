@@ -1,7 +1,7 @@
 <?php
 include "../config.php";
 
-include "../partials/layout.php";
+include "../partials/layout_broker.php";
 
 function pageTitle(){
     return "Agents";
