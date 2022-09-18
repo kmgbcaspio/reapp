@@ -14,17 +14,17 @@
         <div class="tab-pane fade show active" id="new_inquiries" role="tabpanel" aria-labelledby="new_inquiries_tab">
             <br>
             <br>
-            <script type="text/javascript" src="https://c3abw763.caspio.com/dp/7ccbb000a3d5edf57aac4f60a77d/emb"></script>
+            <script type="text/javascript" src="https://c3abw763.caspio.com/dp/7ccbb0001360370717d1494eb16d/emb"></script>
         </div>
         <div class="tab-pane fade" id="processed_inquiries" role="tabpanel" aria-labelledby="processed_inquiries_tab">
             <br>
             <br>
-            <script type="text/javascript" src="https://c3abw763.caspio.com/dp/7ccbb0003afbb5310bfa420fafdd/emb"></script>
+            <script type="text/javascript" src="https://c3abw763.caspio.com/dp/7ccbb00023d5f3b5136e410da767/emb"></script>
         </div>
         <div class="tab-pane fade" id="closed_inquiries" role="tabpanel" aria-labelledby="closed_inquiries_tab">
             <br>
             <br>
-            <script type="text/javascript" src="https://c3abw763.caspio.com/dp/7ccbb00016039b28c07645769df1/emb"></script>
+            <script type="text/javascript" src="https://c3abw763.caspio.com/dp/7ccbb0008a77a133385d40f9beab/emb"></script>
         </div>
     </div>
 </div>
