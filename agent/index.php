@@ -1,2 +1,2 @@
 <?php
-    echo "Home Page Agent";
+    include 'listings.php';
