@@ -1,0 +1,23 @@
+<div class="container-fluid">
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="for-sale-tab" data-toggle="tab" data-target="#for_sale" type="button" role="tab" aria-controls="for_sale" aria-selected="true">For Sale</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="for-rent-tab" data-toggle="tab" data-target="#for_rent" type="button" role="tab" aria-controls="for_rent" aria-selected="false">For Rent</button>
+        </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="for_sale" role="tabpanel" aria-labelledby="for-sale-tab">
+            <br>
+            <br>
+            <script type="text/javascript" src="https://c3abw763.caspio.com/dp/7ccbb00099bf903957944deaacfa/emb"></script>
+        </div>
+        <div class="tab-pane fade" id="for_rent" role="tabpanel" aria-labelledby="for-rent-tab">
+            <br>
+            <br>
+            <script type="text/javascript" src="https://c3abw763.caspio.com/dp/7ccbb0008c919e13c4444993aac7/emb"></script>            
+        </div>
+        
+    </div>
+</div>
