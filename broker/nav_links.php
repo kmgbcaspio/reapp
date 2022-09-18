@@ -14,7 +14,7 @@
     </a>
 </li>
 <li>
-    <a href="add_new_agent.php" class="add_new_agent"><i class="fa fa-user-plus"></i>
+    <a href="add_new_user_agent.php" class="add_new_agent"><i class="fa fa-user-plus"></i>
         <span>Add New Agent</span>
     </a>
 </li>
