@@ -9,6 +9,12 @@
         <meta name="author" content="Caspio, Inc." />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link href="<?php echo $urlConfig; ?>/assets/css/details.css" rel="stylesheet" type="text/css" />
+        <style>
+            div[data-cb-name="data-row"]{
+                border: none;
+                background: #f6f9fc;
+            }
+        </style>
         <script src="<?php echo $urlConfig; ?>/assets/lib/jquery/dist/jquery.min.js"></script>
         <script>
             document.addEventListener("DataPageReady", function() {
@@ -40,7 +46,7 @@
                 <div id="cb-content">
                     <div id="propertyInfo">
                         <!-- Caspio Deployed Code Start Here || RE - Public/View Listing Details -->
-                        <script type="text/javascript" src="https://c1eib354.caspio.com/dp/483540006ce1621962864000b89b/emb"></script>
+                        <script type="text/javascript" src="https://c3abw763.caspio.com/dp/7ccbb000bd92c9fa5fa441aeb2fb/emb"></script>
                         <div id="cxkg" style="display: none;">
                             <a href="https://c1eib354.caspio.com/dp/483540006ce1621962864000b89b">Click here</a> to load this Caspio <a href="https://www.caspio.com" target="_blank" title="Cloud Database">Cloud Database</a>
                         </div>
