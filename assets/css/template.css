@@ -10,3 +10,7 @@ ul.nav-links-ul > li > a > i {
 ul.nav-links-ul > li > a > span {
     font-size: 15px;
 }
+/* table no wrap for '-' character */
+td {
+    white-space: nowrap;
+}
