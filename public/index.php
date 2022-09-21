@@ -11,6 +11,14 @@
         <link href="" rel="stylesheet" type="text/css" />
         <link rel="stylesheet" href="<?php echo $urlConfig; ?>/assets/css/main.css">
         <script src="<?php echo $urlConfig; ?>/assets/lib/jquery/dist/jquery.min.js"></script>
+        <style>
+            body {
+                background: #f0f4f7 url(<?php echo $urlConfig ?>/assets/img/main_bg_image.png) no-repeat;
+            }
+            .cbReportNavBarPanel{
+                display: none;
+            }
+        </style>
     </head>
     <body>
         <div class="lo-top-strip"></div>
