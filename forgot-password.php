@@ -46,7 +46,6 @@
     <script src="<?php echo $urlConfig; ?>/assets/lib/jquery/dist/jquery.min.js"></script>
     <script>
         $(window).on('load',function(){
-            alert('loaded!');
             $(".cbPasswordRecoveryButtonContainer").css("background","#f6f9fc");
         })
     </script>
