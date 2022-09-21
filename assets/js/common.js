@@ -46,7 +46,7 @@ function openModal(modalTitle, appKey, params, size) {
             .addClass(size);
     }
     deployDP("cb-modal-body", appKey, params);
-    $('#cb-modal-title').html(modalTitle);
+    $('#cb-modal-title').html("<h1>" + modalTitle + "</h1>");
     $('#cb-modal').modal({
         backdrop: 'static',
         keyboard: false
