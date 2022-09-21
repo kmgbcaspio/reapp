@@ -29,7 +29,7 @@
                     <img src="<?php echo $urlConfig; ?>/assets/img/caspio-logo.svg" width="140px"/>
                 </a>
             </div>
-            <ul>
+            <ul class="nav-links-ul">
                 <?php
                     navLinks();
                 ?>
