@@ -15,7 +15,7 @@
     <!-- Theme Styles -->
     <link rel="stylesheet" href="<?php echo $urlConfig; ?>/assets/css/theme.css">
 
-    <link rel="stylesheet" href="<?php echo $urlConfig; ?>/assets/css/common.css">
+    <link rel="stylesheet" href="<?php echo $urlConfig; ?>/assets/css/template.css">
     <link rel="stylesheet" href="<?php echo $urlConfig; ?>/assets/css/navbar.css">
     <title>Real Estate</title></head>
     <body>
