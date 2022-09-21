@@ -83,7 +83,7 @@
                     <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <div class="modal-body" id="cb-modal-body"></div>
+                <div class="modal-body d-flex justify-content-center" id="cb-modal-body"></div>
                 </div>
             </div>
         </div>
