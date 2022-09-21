@@ -45,7 +45,7 @@
                 </a>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
                     <a class="dropdown-item" href="profile.php"><i class="far fa-user-circle"></i><span>View Profile</span></a>
-                    <a class="dropdown-item" href="<?php echo $urlConfig; ?>/forgot-password.php"><i class="far fa-list-alt"></i><span>Change Password</span></a>
+                    <a class="dropdown-item" href="change_password.php"><i class="far fa-list-alt"></i><span>Change Password</span></a>
                     <div class="dropdown-divider float-left w-100"></div>
                     <!-- Change redirection link to your Datapage Logout -->
                     <a class="dropdown-item" href="https://c3abw763.caspio.com/folderlogout"><i class="far fa-share-square"></i><span>Logout</span></a>
