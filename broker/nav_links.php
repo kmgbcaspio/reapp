@@ -23,12 +23,6 @@
         <span>Agents</span>
     </a>
 </li>
-<li>
-    <a href="profile.php" class="profile"><i class="fa fa-user-cog"></i>
-        <span>Profile</span>
-    </a>
-</li>
-
 
 
 
