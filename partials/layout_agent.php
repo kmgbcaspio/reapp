@@ -17,6 +17,7 @@
 
     <link rel="stylesheet" href="<?php echo $urlConfig; ?>/assets/css/template.css">
     <link rel="stylesheet" href="<?php echo $urlConfig; ?>/assets/css/navbar.css">
+    <?php if (function_exists('customHeaderJs')) { customHeaderJs(); } ?>
     <title>Real Estate</title></head>
     <body>
         <input type="hidden" name="page_reference" id="page_reference" value="<?php if (function_exists('setActiveLink')) { setActiveLink(); } ?>">

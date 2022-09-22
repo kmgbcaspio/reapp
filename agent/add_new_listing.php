@@ -17,3 +17,7 @@ function navLinks(){
 function setActiveLink(){
     echo "add_new_listing";
 }
+
+function customHeaderJs(){
+    echo '<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA2yHcUngsF4E9LRTmaf1VrarRf-PfZ-8I"></script>';
+}
