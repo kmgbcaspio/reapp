@@ -1,3 +1,6 @@
-<?php # include_once './login.php'
-include_once 'public/index.php'
+<?php
+    include 'config.php';
+    header("Location: $urlConfig/public/index.php");
+    die();
+
 ?>
