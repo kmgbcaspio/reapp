@@ -18,6 +18,18 @@
             .cbReportNavBarPanel{
                 display: none;
             }
+            input[name="Value3_1"] {
+                height: 43px !important;
+            }
+            /* input[name="cbParamVirtual2"] {
+                margin-left: 5px;
+                margin-right: 5px;
+                border: 1px solid black; 
+                border-radius: 10px;
+            } */
+            .cbFormSelect {
+                border: 0;
+            }
         </style>
     </head>
     <body>
@@ -30,9 +42,14 @@
         <div id="cb-wrapper">
             <div id="full-content">
                 <div id="head-content">
-                    <div id="filterContainer"></div>
+                    <div id="mainFilter">
+                        <!-- search mini -->
+                        <!-- <script type="text/javascript" src="https://c3abw763.caspio.com/dp/7ccbb000310efc88cea54c708081/emb"></script> -->
+                        <script type="text/javascript" src="https://c3abw763.caspio.com/dp/7ccbb00014a2f36e9f4143daabf4/emb"></script>
+                    </div>
                     <!-- Caspio Deployed Code Start Here || RE - Public/Main Filter -->
-                    <script type="text/javascript" src="https://c1eib354.caspio.com/dp/4835400045a679da35ac483993ee/emb"></script>
+                    <!-- <script type="text/javascript" src="https://c1eib354.caspio.com/dp/4835400045a679da35ac483993ee/emb"></script> -->
+                    
                     <div id="cxkg" style="display: none;">
                         <!-- <a href="https://c1eib354.caspio.com/dp/4835400045a679da35ac483993ee">Click here</a> to load this Caspio <a href="https://www.caspio.com" target="_blank" title="Cloud Database">Cloud Database</a> -->
                     </div>
