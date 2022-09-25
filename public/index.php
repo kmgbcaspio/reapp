@@ -1,76 +1,61 @@
-<?php include "../config.php" ?>
+<?php include '../config.php' ?>
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-        <title>Real Estate Listings - Public Portal</title>
-        <meta name="description" content="Caspio Ready Made Application - Real Estate Listings" />
-        <meta name="author" content="Caspio, Inc." />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link href="" rel="stylesheet" type="text/css" />
-        <link rel="stylesheet" href="<?php echo $urlConfig; ?>/assets/css/main.css">
-        <script src="<?php echo $urlConfig; ?>/assets/lib/jquery/dist/jquery.min.js"></script>
-        <style>
-            body {
-                background: #f0f4f7 url(<?php echo $urlConfig ?>/assets/img/main_bg_image.png) no-repeat;
-            }
-            .cbReportNavBarPanel{
-                display: none;
-            }
-            input[name="Value3_1"] {
-                height: 43px !important;
-            }
-            /* input[name="cbParamVirtual2"] {
-                margin-left: 5px;
-                margin-right: 5px;
-                border: 1px solid black; 
-                border-radius: 10px;
-            } */
-            .cbFormSelect {
-                border: 0;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="lo-top-strip"></div>
-        <div class="lo-header">
-            <div id="cb-masthead">
-                <h1>Real Estate Listings</h1>
-            </div>
-        </div>
-        <div id="cb-wrapper">
-            <div id="full-content">
-                <div id="head-content">
-                    <div id="mainFilter">
-                        <!-- search mini -->
-                        <!-- <script type="text/javascript" src="https://c3abw763.caspio.com/dp/7ccbb000310efc88cea54c708081/emb"></script> -->
-                        <script type="text/javascript" src="https://c3abw763.caspio.com/dp/7ccbb00014a2f36e9f4143daabf4/emb"></script>
-                    </div>
-                    <!-- Caspio Deployed Code Start Here || RE - Public/Main Filter -->
-                    <!-- <script type="text/javascript" src="https://c1eib354.caspio.com/dp/4835400045a679da35ac483993ee/emb"></script> -->
-                    
-                    <div id="cxkg" style="display: none;">
-                        <!-- <a href="https://c1eib354.caspio.com/dp/4835400045a679da35ac483993ee">Click here</a> to load this Caspio <a href="https://www.caspio.com" target="_blank" title="Cloud Database">Cloud Database</a> -->
-                    </div>
-                    <!-- Caspio Deployed Code End Here -->
-                </div>
-                <div id="cb-content">
-                    <h1 class="sectionTitle">New Listings</h1>
-                    <!-- <div id="searchResultList"> -->
-                    <!-- Caspio Deployed Code Start Here || RE - Public/View Listings -->
-                    <!-- <script type="text/javascript" src="https://c1eib354.caspio.com/dp/4835400092bf56a40cc64f1ebff6/emb"></script> -->
-                    <script type="text/javascript" src="https://c3abw763.caspio.com/dp/7ccbb000534c5a65acb0473e84c2/emb"></script>
-                    <div id="cxkg" style="display: none;">
-                        <!-- <a href="https://c1eib354.caspio.com/dp/4835400092bf56a40cc64f1ebff6">Click here</a> to load this Caspio <a href="https://www.caspio.com" target="_blank" title="Cloud Database">Cloud Database</a> -->
-                    </div>
-                    <!-- Caspio Deployed Code End Here -->
-                    <!-- </div> -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Listing - Search</title>
+    <link rel="stylesheet" href="<?php echo $urlConfig ?>/assets/css/styling.css">
+    <style>
+        .bg-img-heading {
+            background: url(<?php echo $urlConfig ?>/assets/img/main_bg_image.png) no-repeat;
+            min-height: 600px;
+            background-size: cover;
+        }
+        .btn {
+            color:white;
+        }
+        .filter-container {
+            margin-top: 150px;
+            background: rgba(0, 0, 0, 0.5);
+            min-height: 150px;
+            
+        }
+        select[name="cbParamVirtual1"] {
+            height: 43px;
+        }
+        select[name="cbParamVirtual3"] {
+            height: 43px;
+        }
+        .cbSubmitButtonContainer {
+            background: none;
+        }
+        .cbReportNavBarPanel {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid bg-img-heading">
+        <div class="container">
+            <div class="form-row">
+                <div class="col-lg-4">
+                    <h1 class="text-white mt-5 fw-bold">Real Estate Listing</h1>
                 </div>
             </div>
-            <div id="cb-footer">
-                <!-- Place your footer content here -->
+            <div class="form-row justify-content-center filter-container mb-3">
+                <script type="text/javascript" src="https://c3abw763.caspio.com/dp/7ccbb00077980faac50648258c42/emb"></script>
             </div>
         </div>
-    </body>
+    </div>
+    <div class="container mt-5 mb-5">
+        <h3 class="text-center" style="font-size: 40px;">New Listings</h3>
+        <hr>
+        <script type="text/javascript" src="https://c3abw763.caspio.com/dp/7ccbb00095afd5c686144dec8164/emb"></script>
+    </div>
+
+    <!-- JS Stuff -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+</body>
 </html>
