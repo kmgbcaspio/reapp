@@ -1,64 +1,123 @@
 <?php include '../config.php' ?>
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-        <title>Real Estate Listings - Public Portal</title>
-        <meta name="description" content="Caspio Ready Made Application - Real Estate Listings" />
-        <meta name="author" content="Caspio, Inc." />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link href="<?php echo $urlConfig ?>/assets/css/search.css" rel="stylesheet" type="text/css" />
-        <style>
-            body {
-            font: 85%/130% Open Sans, Arial, Helvetica, sans-serif;
-            background: #f0f4f7 url(<?php echo $urlConfig ?>/assets/img/main_bg_image.png) no-repeat;
-            margin: 0px;
-            padding: 0px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="lo-top-strip"></div>
-        <div class="lo-header">
-            <div id="cb-masthead">
-                <h1>Real Estate Listings</h1>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Listing - Search</title>
+    <link rel="stylesheet" href="<?php echo $urlConfig ?>/assets/css/styling.css">
+    <!-- Maps Stuff -->
+    <script type="text/javascript" src="https://static.caspio.com/mashup/script/caspio_mashups_v7.js"></script>
+    <script type="text/javascript">
+    var mapSettings = {
+        'mapType': 'G',
+        'mapView': 'R',
+        'mapWidth': '800',
+        'mapHeight': '600',
+        'mapCssStyle': '',
+        'useAutoZoom': 'Y',
+        'zoomLevelResult': '3',
+        'zoomLevelDetails': '11',
+        'zoomLevelMapIt': '11',
+        'bubbleOpenType': '1',
+        'disableScrollWheel': 'N',
+        'showTrafficLayer': 'N',
+        'plotMarkers': 'Y',
+        'homePosition': 'United States',
+        'apiKey': 'AIzaSyA2yHcUngsF4E9LRTmaf1VrarRf-PfZ-8I'
+    };
+    var dpSettings_7ccbb000ef0a789906ed45e2b2e5 = new mapDataPageSettings('7ccbb000ef0a789906ed45e2b2e5');
+    dpSettings_7ccbb000ef0a789906ed45e2b2e5.DefaultIcon = 'https://static.caspio.com/mashup/icons/flat/icon2.png';
+    dpSettings_7ccbb000ef0a789906ed45e2b2e5.DefaultIconWidth = '20';
+    dpSettings_7ccbb000ef0a789906ed45e2b2e5.DefaultIconHeight = '34';
+    dpSettings_7ccbb000ef0a789906ed45e2b2e5.MapItEnabled = 'Y';
+    dpSettings_7ccbb000ef0a789906ed45e2b2e5.MapItLabel = 'View on map';
+    dpSettings_7ccbb000ef0a789906ed45e2b2e5.FilterNeed = 'N';
+    dpSettings_7ccbb000ef0a789906ed45e2b2e5.FilterRowSize = '5';
+    mapEnvironment.AddDataPageMapSettings(dpSettings_7ccbb000ef0a789906ed45e2b2e5);
+    </script>
+    <style>
+        .bg-img-heading {
+            background: url(<?php echo $urlConfig ?>/assets/img/main_bg_image.png) no-repeat;
+            
+            height:700px;
+            background-size: cover;
+        }
+        .btn {
+            color:white;
+        }
+        .filter-container {
+            margin-top: 150px;
+            background: rgba(0, 0, 0, 0.5);
+            min-height: 150px;
+        }
+        /* select[name="Value1_1"] {
+            height: 43px;
+        }
+        input[name="Value2_1"] {
+            height: 43px;
+        }
+        select[name="cbDSField2"] {
+            height: 43px;
+        }
+        .cbSubmitButtonContainer {
+            background: none;
+        } */
+        .cbReportNavBarPanel {
+            display: none;
+        }
+        .nav-components {
+            color: #e69532;
+            font-size: 30px;
+        }
+        section[data-cb-name="cbTable"] {
+            margin-top: 3rem !important;
+            margin-bottom: 3rem !important;
+        }
+        .data-content {
+            
+        }
+        #results-container {
+            min-height:500px;
+            height: 500px;
+        }
+        .img-results-containers {
+            vertical-align: middle
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid bg-img-heading" style="">
+        <div class="container data-content">
+            <div class="form-row">
+                <div class="col-lg-4">
+                    <h1 class="text-white mt-5 fw-bold">Real Estate Listing</h1>
+                </div>
+            </div>
+            <div class="form-row justify-content-center filter-container mb-5 mt-5 pl-5 pr-5">
+                <script type="text/javascript" src="https://c3abw763.caspio.com/dp/7ccbb0005ea53fff5cf64992bb87/emb"></script>
             </div>
         </div>
-        <div id="cb-wrapper">
-            <div id="full-content">
-                <div id="head-content">
-                    <div id="filterContainer"></div>
-                    <!-- Caspio Deployed Code Start Here || RE - Public/Search Filter -->
-                    <div id="cxkg" style="display: none;">
-                    </div>
-                    <!-- Caspio Deployed Code End Here -->
+    </div>
+    
+    <div class="container mt-5 mb-5">
+        <a href="<?php echo $urlConfig; ?>/public" class="nav-components">Main</a>
+        <span class="" style="font-size:30px">< Search Results</span>
+        <hr>
+        <div class="form-row">
+            <div class="col-lg-6 overflow-auto" id="results-container">
+                <script type="text/javascript" src="https://c3abw763.caspio.com/dp/7ccbb0007dbd24a6a88848f9814f/emb"></script>
+            </div>
+            <div class="col-lg-6">
+                <!-- Google Maps Here -->
+                <div id="map">
                 </div>
-                <div id="nav">
-                    <a class="filterMenu" href="index.html">Main</a>
-                    <span> &lt; Search results</span>
-                </div>
-                <div id="cb-content">
-                    <div id="searchResultList">
-                        <!-- Caspio Deployed Code Start Here || RE - Public/Search Results -->
-                        <script type="text/javascript" src="https://c3abw763.caspio.com/dp/7ccbb000ef0a789906ed45e2b2e5/emb"></script>
-                        <div id="cxkg" style="display: none;">
+            </div>
+        </div>
+    </div>
 
-                        </div>
-                        <!-- Caspio Deployed Code End Here -->
-                    </div>
-                    <!-- Caspio Map Location Start Here -->
-                    <div id="map"></div>
-                    <!-- Caspio Map Location End Here -->
-                </div>
-            </div>
-            <div id="cb-footer">
-                <!-- Place your footer content here -->
-            </div>
-        </div>
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    </body>
+    <!-- JS Stuff -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+</body>
 </html>
