@@ -8,7 +8,7 @@
     <title>Real Estate Listing - Search</title>
     <link rel="stylesheet" href="<?php echo $urlConfig ?>/assets/css/styling.css">
     <!-- Maps Stuff -->
-    <script type="text/javascript" src="https://static.caspio.com/mashup/script/caspio_mashups_v7.js"></script>
+    <script type="text/javascript" src="//static.caspio.com/mashup/script/caspio_mashups_v7.js"></script>
     <script type="text/javascript">
     var mapSettings = {
         'mapType': 'G',
@@ -22,21 +22,22 @@
         'zoomLevelMapIt': '11',
         'bubbleOpenType': '1',
         'disableScrollWheel': 'N',
-        'showTrafficLayer': 'N',
+        'showTrafficLayer': 'Y',
         'plotMarkers': 'Y',
         'homePosition': 'United States',
         'apiKey': 'AIzaSyA2yHcUngsF4E9LRTmaf1VrarRf-PfZ-8I'
     };
-    var dpSettings_7ccbb000ef0a789906ed45e2b2e5 = new mapDataPageSettings('7ccbb000ef0a789906ed45e2b2e5');
-    dpSettings_7ccbb000ef0a789906ed45e2b2e5.DefaultIcon = 'https://static.caspio.com/mashup/icons/flat/icon2.png';
-    dpSettings_7ccbb000ef0a789906ed45e2b2e5.DefaultIconWidth = '20';
-    dpSettings_7ccbb000ef0a789906ed45e2b2e5.DefaultIconHeight = '34';
-    dpSettings_7ccbb000ef0a789906ed45e2b2e5.MapItEnabled = 'Y';
-    dpSettings_7ccbb000ef0a789906ed45e2b2e5.MapItLabel = 'View on map';
-    dpSettings_7ccbb000ef0a789906ed45e2b2e5.FilterNeed = 'N';
-    dpSettings_7ccbb000ef0a789906ed45e2b2e5.FilterRowSize = '5';
-    mapEnvironment.AddDataPageMapSettings(dpSettings_7ccbb000ef0a789906ed45e2b2e5);
+    var dpSettings_7ccbb0007dbd24a6a88848f9814f = new mapDataPageSettings('7ccbb0007dbd24a6a88848f9814f');
+    dpSettings_7ccbb0007dbd24a6a88848f9814f.DefaultIcon = '//static.caspio.com/mashup/icons/flat/icon2.png';
+    dpSettings_7ccbb0007dbd24a6a88848f9814f.DefaultIconWidth = '20';
+    dpSettings_7ccbb0007dbd24a6a88848f9814f.DefaultIconHeight = '34';
+    dpSettings_7ccbb0007dbd24a6a88848f9814f.MapItEnabled = 'Y';
+    dpSettings_7ccbb0007dbd24a6a88848f9814f.MapItLabel = 'View on map';
+    dpSettings_7ccbb0007dbd24a6a88848f9814f.FilterNeed = 'N';
+    dpSettings_7ccbb0007dbd24a6a88848f9814f.FilterRowSize = '2';
+    mapEnvironment.AddDataPageMapSettings(dpSettings_7ccbb0007dbd24a6a88848f9814f);
     </script>
+    <script type="text/javascript">mapEnvironment.PreLoadEmptyMap();</script>
     <style>
         .bg-img-heading {
             background: url(<?php echo $urlConfig ?>/assets/img/main_bg_image.png) no-repeat;
@@ -71,7 +72,10 @@
             color: #e69532;
             font-size: 30px;
         }
-        section[data-cb-name="cbTable"] {
+        .conainter-for-filter{
+            padding-left:40px;
+            padding-right:40px;
+            padding-top:30px;
             margin-top: 3rem !important;
             margin-bottom: 3rem !important;
         }
@@ -83,7 +87,8 @@
             height: 500px;
         }
         .img-results-containers {
-            vertical-align: middle
+            vertical-a
+            .lign: middle
         }
     </style>
 </head>
@@ -119,5 +124,9 @@
 
     <!-- JS Stuff -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>
+        var objElement = $("select[name='cbParamVirtual10']").parent().parent();
+        objElement.addClass("conainter-for-filter");
+    </script>
 </body>
 </html>

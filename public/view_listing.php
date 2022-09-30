@@ -1,164 +1,111 @@
 <?php include "../config.php" ?>
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-        <title>Real Estate Listings - Public Portal</title>
-        <meta name="description" content="Caspio Ready Made Application - Real Estate Listings" />
-        <meta name="author" content="Caspio, Inc." />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link href="<?php echo $urlConfig; ?>/assets/css/details.css" rel="stylesheet" type="text/css" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <!-- Google Maps -->
-        <script type="text/javascript" src="https://static.caspio.com/mashup/script/caspio_mashups_v7.js"></script>
-        <script type="text/javascript">
-        var mapSettings = {
-            'mapType': 'G',
-            'mapView': 'R',
-            'mapWidth': '800',
-            'mapHeight': '600',
-            'mapCssStyle': '',
-            'useAutoZoom': 'Y',
-            'zoomLevelResult': '3',
-            'zoomLevelDetails': '11',
-            'zoomLevelMapIt': '11',
-            'bubbleOpenType': '1',
-            'disableScrollWheel': 'N',
-            'showTrafficLayer': 'N',
-            'plotMarkers': 'Y',
-            'homePosition': 'United States',
-            'apiKey': 'AIzaSyDhxKTwCeN00YrbGkHXjj0Jwd6XbUI1ZRo'
-        };
-        var dpSettings_7ccbb000555a28735c4f4d8cafa7 = new mapDataPageSettings('7ccbb000555a28735c4f4d8cafa7');
-        dpSettings_7ccbb000555a28735c4f4d8cafa7.DefaultIcon = 'https://static.caspio.com/mashup/icons/flat/icon2.png';
-        dpSettings_7ccbb000555a28735c4f4d8cafa7.DefaultIconWidth = '20';
-        dpSettings_7ccbb000555a28735c4f4d8cafa7.DefaultIconHeight = '34';
-        dpSettings_7ccbb000555a28735c4f4d8cafa7.MapItEnabled = 'Y';
-        dpSettings_7ccbb000555a28735c4f4d8cafa7.MapItLabel = 'View on map';
-        dpSettings_7ccbb000555a28735c4f4d8cafa7.FilterNeed = 'N';
-        dpSettings_7ccbb000555a28735c4f4d8cafa7.FilterRowSize = '5';
-        mapEnvironment.AddDataPageMapSettings(dpSettings_7ccbb000555a28735c4f4d8cafa7);
-        </script>
-        <script type="text/javascript">mapEnvironment.PreLoadEmptyMap();</script>
-        <style>
-            div[data-cb-name="data-row"]{
-                border: none;
-                background: #f6f9fc;
-            }
-        </style>
-        <style>
-            body {
-                background: #f0f4f7 url(<?php echo $urlConfig ?>/assets/img/main_bg_image_mini.png) no-repeat;
-            }
-            .container-fluid{
-                margin-top:50px;
-                margin-bottom:100px;
-            }
-
-            .carousel-inner img {
-                width: 100%;
-                height: 100%;
-            }
-
-            #custCarousel .carousel-indicators {
-                position: static;
-                margin-top:20px;
-            }
-
-            #custCarousel .carousel-indicators > li {
-            width:100px;
-            }
-
-            #custCarousel .carousel-indicators li img {
-                display: block;
-                opacity: 0.5;
-            }
-
-            #custCarousel .carousel-indicators li.active img {
-                opacity: 1;
-            }
-
-            #custCarousel .carousel-indicators li:hover img {
-                opacity: 0.75;
-            }
-
-            .carousel-item img{
-
-                width:100%;
-            }
-        </style>
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        <script src="<?php echo $urlConfig; ?>/assets/lib/jquery/dist/jquery.min.js"></script>
-        <script>
-            document.addEventListener("DataPageReady", function() {
-                var $preloader = $("#page-preloader");
-                var $spinner = $preloader.find(".spinner");
-
-                $spinner.fadeOut();
-                $preloader.delay(350).fadeOut("slow");
-            });
-        </script>
-    </head>
-    <body>
-        <div id="page-preloader">
-            <div class="lo-header">
-                <div class="cb-masthead">
-                    <h1>Real Estate Listings</h1>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Application - Public Portal</title>
+    <link rel="stylesheet" href="<?php echo $urlConfig ?>/assets/css/styling.css">
+    <style>
+        body {
+            background: #f0f4f7;
+        }
+        .bg-img-heading {
+            background: url(<?php echo $urlConfig ?>/assets/img/main_bg_image_mini.png) no-repeat;
+            height: 150px;
+            /* min-height: 600px; */
+            background-size: cover;
+        }
+        .carousel-control-prev, .carousel-control-next {
+            opacity: 0;
+        }
+    </style>
+    <!-- Google Maps -->
+    <script type="text/javascript" src="https://static.caspio.com/mashup/script/caspio_mashups_v7.js"></script>
+    <script type="text/javascript">
+    var mapSettings = {
+        'mapType': 'G',
+        'mapView': 'R',
+        'mapWidth': '800',
+        'mapHeight': '600',
+        'mapCssStyle': '',
+        'useAutoZoom': 'Y',
+        'zoomLevelResult': '3',
+        'zoomLevelDetails': '11',
+        'zoomLevelMapIt': '11',
+        'bubbleOpenType': '1',
+        'disableScrollWheel': 'N',
+        'showTrafficLayer': 'N',
+        'plotMarkers': 'Y',
+        'homePosition': 'United States',
+        'apiKey': 'AIzaSyDhxKTwCeN00YrbGkHXjj0Jwd6XbUI1ZRo'
+    };
+    var dpSettings_7ccbb000555a28735c4f4d8cafa7 = new mapDataPageSettings('7ccbb000555a28735c4f4d8cafa7');
+    dpSettings_7ccbb000555a28735c4f4d8cafa7.DefaultIcon = 'https://static.caspio.com/mashup/icons/flat/icon2.png';
+    dpSettings_7ccbb000555a28735c4f4d8cafa7.DefaultIconWidth = '20';
+    dpSettings_7ccbb000555a28735c4f4d8cafa7.DefaultIconHeight = '34';
+    dpSettings_7ccbb000555a28735c4f4d8cafa7.MapItEnabled = 'Y';
+    dpSettings_7ccbb000555a28735c4f4d8cafa7.MapItLabel = 'View on map';
+    dpSettings_7ccbb000555a28735c4f4d8cafa7.FilterNeed = 'N';
+    dpSettings_7ccbb000555a28735c4f4d8cafa7.FilterRowSize = '5';
+    mapEnvironment.AddDataPageMapSettings(dpSettings_7ccbb000555a28735c4f4d8cafa7);
+    </script>
+    <script type="text/javascript">mapEnvironment.PreLoadEmptyMap();</script>
+</head>
+<body>
+    <div class="container-fluid mb-5 bg-img-heading">
+        <div class="container">
+            <div class="form-row pt-5">
+                <div class="col-lg-4">
+                    <h1 class="text-white">Real Estate Listing</h1>
                 </div>
             </div>
-            <span class="spinner"></span>
         </div>
-        <div class="lo-header">
-            <div class="cb-masthead">
-                <h1> Real Estate <span>Listings</span>
-                </h1>
+    </div>
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-lg-6">
+                <a href=""> <span class="text-primary" style="font-size: 20px;">Main</span> </a> &lt; 
+                <a href=""> <span class="text-primary" style="font-size: 20px;">Search</span> </a> &lt; 
+                <span id="addr-info" style="font-size: 20px;"></span>
             </div>
         </div>
-        <div id="cb-wrapper">
-            <div id="full-content">
-                <div id="cb-content">
-                    <div id="propertyInfo">
-                        <div id="nav" class="mb-4">
-                            <a class="filterMenu" href="<?php echo $urlConfig ?>/public/index.php">Main</a> &lt; 
-                            <a id="histLink" class="filterMenu" href="<?php echo $urlConfig ?>/public/search.php"> Search Results</a>
-                            <span>&lt; <span id="addr-info"> </span></span>
-                        </div>
-                        <!-- Caspio Deployed Code Start Here || RE - Public/View Listing Details -->
-                        
-                        <script type="text/javascript" src="https://c3abw763.caspio.com/dp/7ccbb000555a28735c4f4d8cafa7/emb"></script>
-                        <!-- <script type="text/javascript" src="https://c3abw763.caspio.com/dp/7ccbb000555a28735c4f4d8cafa7/emb"></script> -->
-                        <!-- Caspio Deployed Code End Here -->
+        <br>
+        <div class="row">
+            <div class="col-lg-8">
+                <script type="text/javascript" src="https://c3abw763.caspio.com/dp/7ccbb000555a28735c4f4d8cafa7/emb"></script>
+            </div>
+            <!-- Map and Contact Form -->
+            <div class="col-lg-4">
+                <div class="row" style="background: white;">
+                    <div class="col-lg-12 mt-2">
+                        <!-- Embed Contact Here! -->
+                        <script type="text/javascript" src="https://c3abw763.caspio.com/dp/7ccbb00041e83708fef745fe982c/emb"></script>
                     </div>
-                    <div id="right-section">
-                        <div id="agentInfo">
-                            <!-- Caspio Deployed Code Start Here || RE - Public/View Agent Data -->
-                            <script type="text/javascript" src="https://c3abw763.caspio.com/dp/7ccbb00041e83708fef745fe982c/emb"></script>
-                            <!-- Caspio Map Location End Here -->
+                </div>
+                <div class="row" style="background: white;">
+                    <div class="col-lg-12">
+                        <script type="text/javascript" src="https://c3abw763.caspio.com/dp/7ccbb000f55456ad01444286883f/emb"></script>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-lg-12" style="padding-left: 0px; padding-right:0px">
+                        <div id="map">
                         </div>
-                        <div id="contactForm">
-                            <!-- Caspio Deployed Code Start Here || RE - Public/Submit Inquiry -->
-                            <script type="text/javascript" src="https://c3abw763.caspio.com/dp/7ccbb000f55456ad01444286883f/emb"></script>
-                            <!-- Caspio Map Location End Here -->
-                        </div>
-                        <!-- Caspio Map Location Start Here -->
-                        <div id="map"></div>
-                        <!-- Caspio Map Location End Here -->
                     </div>
                 </div>
             </div>
-            <div id="cb-footer">
-                <!-- Place your footer content here -->
-            </div>
         </div>
-    
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script>
         $(window).on('load',function(){
             var fa = $('#fa-src').html()
             $("#addr-info").html(fa);
         })
     </script>
-    </body>
+</body>
 </html>

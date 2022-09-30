@@ -40,6 +40,7 @@ function deployDP(containerID, appKey, params) {
  */
 function openModal(modalTitle, appKey, params, size) {
     $('#cb-modal-body').html('');
+    size = "modal-lg";
     if (size) {
         $("#cb-modal .modal-dialog")
             .removeClass("modal-sm modal-md modal-lg modal-xl")
