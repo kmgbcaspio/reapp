@@ -66,8 +66,8 @@
     <div class="container mb-5">
         <div class="row">
             <div class="col-lg-6">
-                <a href=""> <span class="text-primary" style="font-size: 20px;">Main</span> </a> &lt; 
-                <a href=""> <span class="text-primary" style="font-size: 20px;">Search</span> </a> &lt; 
+                <a href="<?php echo $urlConfig ?>/public/index.php"> <span class="text-primary" style="font-size: 20px;">Main</span> </a> &lt; 
+                <a href="<?php echo $urlConfig ?>/public/search.php"> <span class="text-primary" style="font-size: 20px;">Search</span> </a> &lt; 
                 <span id="addr-info" style="font-size: 20px;"></span>
             </div>
         </div>
