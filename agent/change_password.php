@@ -1,7 +1,7 @@
 <?php
 include "../config.php";
 
-include "../partials/layout_broker.php";
+include "../partials/layout_agent.php";
 
 function pageTitle(){
     return "Change Password";
